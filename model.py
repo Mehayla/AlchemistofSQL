@@ -58,14 +58,13 @@ class Ratings(db.Model):
     movie_id = db.Column(db.Integer, db.ForeignKey("movies.movie_id"))
     user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"))
 
-    movie = db.relationship("Movie", backref = "ratings") #Why Movie? Which movie? Class or table? what is backref
+    movie = db.relationship("Movie", backref = "ratings") # Movie - Class 
     user = db.relationship ("User", backref = "ratings")
     
     # class Parent(Base):
     # __tablename__ = 'parent'
     # id = Column(Integer, primary_key=True)
     # children = relationship("Child", backref="parent")
-    
     
 
     def __repr__(self):
