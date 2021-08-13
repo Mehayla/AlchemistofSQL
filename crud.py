@@ -33,8 +33,7 @@ def create_rating(user, movie, score):
     db.session.commit()
     
     return rating
-    # Doesn't like one of the parameters in Ratings - 
-    # Error is AttributeError: 'str' object has no attribute '_sa_instance_state'
+    
     
     
 if __name__ == '__main__':

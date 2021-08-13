@@ -90,17 +90,17 @@ if __name__ == "__main__":
 
     connect_to_db(app)
 
-    db.drop_all()
-    db.create_all()
+    # db.drop_all()
+    # db.create_all()
     
-    test_user = User(email = 'TestytestTest@poatato.mash', password = 'garlic')
-    db.session.add(test_user)
-    db.session.commit()
+    # test_user = User(email = 'TestytestTest@poatato.mash', password = 'garlic')
+    # db.session.add(test_user)
+    # db.session.commit()
 
-    test_movie = Movie(title = 'Fast and the Furriest', overview = 'Furry and Fast Muppets take over', release_date = datetime.now(), poster_path = 'www.imdb.com/fast+furriest')
-    db.session.add(test_movie)
-    db.session.commit()
+    # test_movie = Movie(title = 'Fast and the Furriest', overview = 'Furry and Fast Muppets take over', release_date = datetime.now(), poster_path = 'www.imdb.com/fast+furriest')
+    # db.session.add(test_movie)
+    # db.session.commit()
 
-    test_rating = Ratings(score=90, movie=test_movie, user=test_user)
-    db.session.add(test_rating)
-    db.session.commit()
+    # test_rating = Ratings(score=90, movie=test_movie, user=test_user)
+    # db.session.add(test_rating)
+    # db.session.commit()
